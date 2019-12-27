@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 )
 public class EmployeeServlet extends HttpServlet {
 
-    EmployeeService employeeService = new EmployeeService();
+    private EmployeeService employeeService = new EmployeeService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
