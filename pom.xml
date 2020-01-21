@@ -32,7 +32,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>emp-app</finalName>
+		<finalName>ROOT</finalName>
 	</build>
 
 	<properties>
