@@ -1,5 +1,9 @@
-FROM tomcat:latest
+FROM tomcat:latest as base
 
-RUN ["rm","-R", "/usr/local/tomcat/webapps/*"]
+FROM maven:3-jdk-8-slim as builder
+WORKDIR /app
+COPY . .
+RUN ["mvn","package"]
 
-COPY ["target/*.war", "/usr/local/tomcat/webapps/ROOT.war"]
+FROM base
+COPY --from=builder ["/app/target/*.war", "/usr/local/tomcat/webapps/ROOT.war"]
