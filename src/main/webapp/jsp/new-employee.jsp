@@ -7,9 +7,9 @@
     <head>
         <link rel="stylesheet" href="/emp-app/css/bootstrap.min.css" >   		
 
-        <script src="/emp-app/js/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
 
-        <script src="emp-app/js/bootstrap.min.js" ></script>  
+        <script src="js/bootstrap.min.js" ></script>  
     </head>
     <body>
         <div class="container">
