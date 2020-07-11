@@ -26,7 +26,7 @@ public class Employee {
         this.department = department;
         this.email = email;     
         this.id = id;
-    }
+    
     
     public Employee(String name, String lastName, String birthDate, String role, String department, String email) {
         this.name = name;
