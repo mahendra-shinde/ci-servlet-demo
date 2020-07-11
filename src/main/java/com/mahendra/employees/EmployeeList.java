@@ -4,7 +4,7 @@ package com.mahendra.employees;
 import java.util.ArrayList;
 import java.util.List;
 
-
+// List of employees
 public class EmployeeList {
     private static final List<Employee> employeeList = new ArrayList();
     
