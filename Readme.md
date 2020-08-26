@@ -10,6 +10,7 @@ You just need `docker` installed to build entire webapp and also create an execu
 
 ## Steps
 
+
 1. Use either `cmd` or `powershell` or `bash` terminal and use following commands:
     
     NOTE: the `$` symbol represent a `prompt` it's not part of command.
