@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" >   		
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js" ></script>        
-	   
+	    <title>Employees Portal</title>
     </head>
 
     <body bgcolor="dracula">          
