@@ -29,6 +29,6 @@ jobs:
       - name: Run a one-line script
         run: echo $message
         env:
-          message: Hello Navi Mumbai !
+          message: ${{ secrets.MESSAGE }} 
 
  
