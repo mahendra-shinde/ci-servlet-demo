@@ -1,5 +1,5 @@
 ## Stage-1: Pre-Fetch the base image
-FROM tomcat:latest as base
+FROM tomcat:8 as base
 
 ## Stage-2: Using `maven` image, build WAR from source code 
 FROM maven:3-jdk-8-slim as builder
