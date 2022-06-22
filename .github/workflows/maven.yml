@@ -30,7 +30,7 @@ jobs:
       run: mvn -B package --file pom.xml
    
     - name: Uploading the WAR
-      uses: actions/upload-artifact@3.1.0
+      uses: actions/upload-artifact@v3.1.0
       with:
         path: target/*.war
         retention-days: 30
