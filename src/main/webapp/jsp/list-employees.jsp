@@ -11,7 +11,7 @@
     </head>
 
     <body bgcolor="dracula">          
-	    <h2>HR Department</h2>
+	    <h2>Human Resources</h2>
         <div class="container">
             <h2>List of Employees</h2>
             <!--Search Form -->
