@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mahendra</groupId>
 	<artifactId>emp-demo1</artifactId>
@@ -7,16 +6,18 @@
 	<packaging>war</packaging>
 	<name>emp-demo1</name>
 	<description>Employee Demo with Bootstrap </description>
-<repository>
-  <id>M2Packages</id>
-  <url>https://pkgs.dev.azure.com/mahendraunlimited/_packaging/M2Packages/maven/v1</url>
-  <releases>
-    <enabled>true</enabled>
-  </releases>
-  <snapshots>
-    <enabled>true</enabled>
-  </snapshots>
-</repository>
+	<repositories>
+		<repository>
+			<id>M2Packages</id>
+			<url>https://pkgs.dev.azure.com/mahendraunlimited/_packaging/M2Packages/maven/v1</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
