@@ -1,0 +1,7 @@
+updates:
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "daily"
