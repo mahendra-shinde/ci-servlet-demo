@@ -26,13 +26,12 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
         cache: maven
-        server-id: M2Packages
-        server-username: mahendraunlimited
-        server-password: khbvimbkup4osszlunsq6mdy7lgyxl2yveswqzm5ssvdyihkwz4a
               
     - name: Build with Maven
-      run: mvn -B package --file pom.xml 
+      run: mvn -B package 
+    - name: Update version in pom.xml (Release only)
+      run: mvn -B versions:set -DnewVersion=${{ github.GITHUB_RUN_NUMBER }} -DgenerateBackupPoms=false
       
     - name: Publish to Azure Artiacts
-      run: mvn deploy 
+      run: mvn -B deploy -s settings.xml 
       
