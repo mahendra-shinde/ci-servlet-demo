@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mahendra</groupId>
 	<artifactId>emp-demo1</artifactId>
-	<version>1.0</version>
+	<version>1.0.${build}</version>
 	<packaging>war</packaging>
 	<name>emp-demo1</name>
 	<description>Employee Demo with Bootstrap </description>
@@ -61,5 +61,6 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<build>1</build>
 	</properties>
 </project>
