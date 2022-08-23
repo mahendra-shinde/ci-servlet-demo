@@ -32,11 +32,3 @@ jobs:
     - name: Publish to Azure Artiacts
       run: mvn -s settings.xml deploy
       
-      
-   
-    - name: Uploading the WAR
-      uses: actions/upload-artifact@v3.1.0
-      with:
-        path: target/*.war
-        retention-days: 30
-      
