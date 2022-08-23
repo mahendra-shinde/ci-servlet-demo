@@ -26,11 +26,10 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
         cache: maven
-        settings-path: ./settings.xml
               
     - name: Build with Maven
       run: mvn -B package --file pom.xml 
       
     - name: Publish to Azure Artiacts
-      run: mvn deploy 
+      run: mvn deploy --settings settings.xml
       
