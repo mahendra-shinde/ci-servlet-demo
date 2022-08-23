@@ -28,7 +28,7 @@ jobs:
         cache: maven
         server-id: M2Packages
         server-username: mahendraunlimited
-        server-password: zu6mjfgyu6ngw4iskohdclkpojljaodbbxvltvktdkxvhdokqnsq
+        server-password: txnrtalrdku34csxjvoy6tlmo2tgtgj5olggbgbpxbvdb7u3wvba
               
     - name: Build with Maven
       run: mvn -B package --file pom.xml 
