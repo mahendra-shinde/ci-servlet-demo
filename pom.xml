@@ -7,7 +7,16 @@
 	<packaging>war</packaging>
 	<name>emp-demo1</name>
 	<description>Employee Demo with Bootstrap </description>
-
+<repository>
+  <id>M2Packages</id>
+  <url>https://pkgs.dev.azure.com/mahendraunlimited/_packaging/M2Packages/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
