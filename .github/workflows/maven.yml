@@ -30,7 +30,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package 
     - name: Update version in pom.xml (Release only)
-      run: mvn -B versions:set -DnewVersion=${{ GITHUB_RUN_NUMBER }} -DgenerateBackupPoms=false
+      run: mvn -B versions:set -DnewVersion=$GITHUB_RUN_ID -DgenerateBackupPoms=false
       
     - name: Publish to Azure Artiacts
       run: mvn -B deploy -s settings.xml 
