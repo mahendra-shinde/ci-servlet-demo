@@ -27,7 +27,12 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package install --file pom.xml -s settings.xml
+      run: mvn -B package --file pom.xml 
+      
+    - name: Publish to Azure Artiacts
+      run: mvn -s settings.xml deploy
+      
+      
    
     - name: Uploading the WAR
       uses: actions/upload-artifact@v3.1.0
