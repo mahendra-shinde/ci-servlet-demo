@@ -18,6 +18,18 @@
 			</snapshots>
 		</repository>
 	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>M2Packages</id>
+			<url>https://pkgs.dev.azure.com/mahendraunlimited/_packaging/M2Packages/maven/v1</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -42,6 +54,7 @@
 
 	</dependencies>
 	<build>
+	
 		<finalName>ROOT</finalName>
 	</build>
 
