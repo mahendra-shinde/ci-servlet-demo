@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mahendra</groupId>
 	<artifactId>emp-demo1</artifactId>
-	<version>1.0.${build}</version>
+	<version>1.0</version>
 	<packaging>war</packaging>
 	<name>emp-demo1</name>
 	<description>Employee Demo with Bootstrap </description>
