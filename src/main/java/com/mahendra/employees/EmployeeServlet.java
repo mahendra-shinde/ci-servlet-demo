@@ -1,4 +1,3 @@
-/* Copyright � 2015 Oracle and/or its affiliates. All rights reserved. */
 package com.mahendra.employees;
 
 import java.io.IOException;
