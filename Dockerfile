@@ -1,8 +1,8 @@
 ## Stage-1: Pre-Fetch the base image
-FROM tomcat:9-jre11 as base
+FROM tomcat:9-jre17 as base
 
 ## Stage-2: Using `maven` image, build WAR from source code 
-FROM maven:3.8.6-jdk-11-slim as builder
+FROM maven:3.9.8-eclipse-temurin-17 as builder
 WORKDIR /app
 COPY . .
 RUN ["mvn","package"]
