@@ -14,13 +14,16 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat "mvn clean package"
+            bat "mvn clean package"
             }
 
             post {
-                success {
-                    archiveArtifacts 'target/*.war'
-                }
+            success {
+                archiveArtifacts 'target/*.war'
+            }
+            failure {
+                echo 'Build failed. Please check the logs for details.'                
+            }
             }
         }
     }
